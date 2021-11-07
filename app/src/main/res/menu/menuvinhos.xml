@@ -17,4 +17,9 @@
         android:icon="@drawable/outros"
         android:title="@string/outros_msg"
         app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mn_site"
+        android:icon="@drawable/www"
+        android:title="Visitar Website"
+        app:showAsAction="always" />
 </menu>

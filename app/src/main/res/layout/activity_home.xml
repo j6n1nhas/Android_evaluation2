@@ -74,7 +74,7 @@
                     android:textAlignment="viewEnd" />
 
                 <TextView
-                    android:id="@+id/txt_preco_t_periquita"
+                    android:id="@+id/txt_preco_o_periquita"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:width="200dp"
@@ -110,7 +110,7 @@
                 app:srcCompat="@drawable/tinto2" />
 
             <TextView
-                android:id="@+id/txt_desc_t_periquitareserva"
+                android:id="@+id/txt_desc_o_portocomenda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/desc_t_periquitareserva"
@@ -132,7 +132,7 @@
                     android:textAlignment="viewEnd" />
 
                 <TextView
-                    android:id="@+id/txt_preco_t_periquitareserva"
+                    android:id="@+id/txt_preco_o_portocomenda"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
@@ -169,7 +169,7 @@
                 app:srcCompat="@drawable/tinto3" />
 
             <TextView
-                android:id="@+id/txt_desc_t_ea"
+                android:id="@+id/txt_desc_o_quintadavegia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/desc_t_ea"

@@ -20,9 +20,11 @@ public class BrancosActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menuvinhos, menu);
-        return true;
+        MenuInflater mi = getMenuInflater();
+        mi.inflate(R.menu.menuvinhos, menu);
+        MenuItem mitem = menu.findItem(R.id.mn_brancos);
+        mitem.setVisible(false);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override

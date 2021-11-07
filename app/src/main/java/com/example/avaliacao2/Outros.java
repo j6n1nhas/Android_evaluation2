@@ -20,9 +20,11 @@ public class Outros extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menuvinhos, menu);
-        return true;
+        MenuInflater mi = getMenuInflater();
+        mi.inflate(R.menu.menuvinhos, menu);
+        MenuItem mitem = menu.findItem(R.id.mn_outros);
+        mitem.setVisible(false);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
@@ -35,10 +37,12 @@ public class Outros extends AppCompatActivity {
                 i.setClass(this, HomeActivity.class);
                 Toast.makeText(this, R.string.tintos_msg, Toast.LENGTH_SHORT).show();
                 startActivity(i);
+                return true;
             case R.id.mn_brancos:
                 i.setClass(this, BrancosActivity.class);
                 Toast.makeText(this, R.string.brancos_msg, Toast.LENGTH_SHORT).show();
                 startActivity(i);
+                return true;
             default:
                 Toast.makeText(this, R.string.outros_msg, Toast.LENGTH_SHORT).show();
                 return true;

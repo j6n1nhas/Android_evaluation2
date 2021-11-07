@@ -8,32 +8,39 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.webkit.WebView;
 import android.widget.Toast;
 
-public class HomeActivity extends AppCompatActivity {
+public class WebSite extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_web_site);
+
+        WebView wv = (WebView) findViewById(R.id.wv_website);
+        wv.loadUrl("https://www.google.pt");
     }
 
-    @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater mi = getMenuInflater();
         mi.inflate(R.menu.menuvinhos, menu);
-        MenuItem mitem = menu.findItem(R.id.mn_tintos);
+        MenuItem mitem = (MenuItem) menu.getItem(R.id.mn_site);
         mitem.setVisible(false);
         return super.onCreateOptionsMenu(menu);
     }
 
-    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item)
     {
         Intent i = new Intent();
         switch (item.getItemId())
         {
+            case R.id.mn_tintos:
+                Toast.makeText(this, R.string.tintos_msg, Toast.LENGTH_SHORT).show();
+                i.setClass(this, HomeActivity.class);
+                startActivity(i);
+                return true;
             case R.id.mn_brancos:
                 Toast.makeText(this, R.string.brancos_msg, Toast.LENGTH_SHORT).show();
                 i.setClass(this, BrancosActivity.class);
@@ -44,15 +51,9 @@ public class HomeActivity extends AppCompatActivity {
                 i.setClass(this, Outros.class);
                 startActivity(i);
                 return true;
-            case R.id.mn_site:
-                Toast.makeText(this, "Website", Toast.LENGTH_SHORT).show();
-                i.setClass(this, WebSite.class);
-                startActivity(i);
-                return true;
             default:
-                Toast.makeText(this, R.string.tintos_msg, Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.website_msg, Toast.LENGTH_SHORT).show();
                 return true;
-                //return super.onOptionsItemSelected(item);
         }
     }
 }

@@ -37,4 +37,5 @@
     <string name="preco_t_periquitareserva">7.80 €</string>
     <string name="preco_t_ea">9.25 €</string>
     <string name="btn_txt_comprar">Comprar</string>
+    <string name="website_msg">ApPinga Website</string>
 </resources>

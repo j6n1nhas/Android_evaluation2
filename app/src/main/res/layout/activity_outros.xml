@@ -7,10 +7,12 @@
     tools:context=".Outros">
 
     <ScrollView
-        android:layout_width="379dp"
-        android:layout_height="0dp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="25dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -69,7 +71,7 @@
                     android:textAlignment="viewEnd" />
 
                 <TextView
-                    android:id="@+id/txt_preco_t_periquita"
+                    android:id="@+id/txt_preco_o_periquita"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:width="200dp"
@@ -99,7 +101,7 @@
                 app:srcCompat="@drawable/rose1" />
 
             <TextView
-                android:id="@+id/txt_desc_t_periquitareserva"
+                android:id="@+id/txt_desc_o_portocomenda"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/desc_o_portocomenda"
@@ -121,7 +123,7 @@
                     android:textAlignment="viewEnd" />
 
                 <TextView
-                    android:id="@+id/txt_preco_t_periquitareserva"
+                    android:id="@+id/txt_preco_o_portocomenda"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
@@ -152,7 +154,7 @@
                 app:srcCompat="@drawable/rose2" />
 
             <TextView
-                android:id="@+id/txt_desc_t_ea"
+                android:id="@+id/txt_desc_o_quintadavegia"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/desc_o_quintadavegia"
