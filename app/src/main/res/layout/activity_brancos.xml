@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BrancosActivity">
+
+    <ScrollView
+        android:layout_width="379dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-178dp"
+            tools:layout_editor_absoluteY="365dp">
+
+            <TextView
+                android:id="@+id/txt_titulo_brancos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/brancos_msg"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_titulo_b_peramanca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/b_peramanca"
+                android:textAlignment="center" />
+
+            <ImageView
+                android:id="@+id/img_b_peramanca"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:contentDescription="@string/desc_b_peramanca"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/branco" />
+
+            <TextView
+                android:id="@+id/txt_desc_b_peramanca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_b_peramanca"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preço: "
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:id="@+id/txt_preco_b_peramanca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="200dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/preco_b_peramanca"
+                    android:textAlignment="viewStart" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_titulo_b_opta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/b_opta"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_b_opta"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/branco2" />
+
+            <TextView
+                android:id="@+id/txt_desc_b_opta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_b_opta"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:width="50dp"
+                    android:text="Preço: "
+                    android:textAlignment="viewEnd"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_preco_b_opta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:width="200dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/preco_b_opta"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_titulo_b_montevelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/b_montevelho"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_b_montevelho"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:srcCompat="@drawable/branco4" />
+
+            <TextView
+                android:id="@+id/txt_desc_b_montevelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_b_montevelho"
+                android:textAlignment="center"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Preço: "
+                    android:textAlignment="viewEnd" />
+
+                <TextView
+                    android:id="@+id/txt_preco_b_montevelho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:width="200dp"
+                    android:paddingStart="20dp"
+                    android:text="@string/preco_b_montevelho"
+                    android:textAlignment="viewStart" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

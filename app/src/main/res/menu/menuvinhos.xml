@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mn_tintos"
+        android:icon="@drawable/tintos"
+        android:title="@string/tintos_msg"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mn_brancos"
+        android:icon="@drawable/brancos"
+        android:title="@string/brancos_msg"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/mn_outros"
+        android:icon="@drawable/outros"
+        android:title="@string/outros_msg"
+        app:showAsAction="ifRoom" />
+</menu>
