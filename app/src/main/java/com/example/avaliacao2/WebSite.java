@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -19,9 +20,11 @@ public class WebSite extends AppCompatActivity {
         setContentView(R.layout.activity_web_site);
 
         WebView wv = (WebView) findViewById(R.id.wv_website);
-        wv.loadUrl("https://www.google.pt");
+        wv.loadUrl("http://www.google.com");
+        //Resources r = getResources();
     }
 
+    @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
         MenuInflater mi = getMenuInflater();
@@ -31,6 +34,7 @@ public class WebSite extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
+    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item)
     {
         Intent i = new Intent();
