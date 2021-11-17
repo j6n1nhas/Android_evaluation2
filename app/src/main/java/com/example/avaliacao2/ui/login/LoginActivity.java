@@ -25,9 +25,6 @@ import android.widget.Toast;
 
 import com.example.avaliacao2.MainActivity;
 import com.example.avaliacao2.R;
-import com.example.avaliacao2.ui.login.LoginViewModel;
-import com.example.avaliacao2.ui.login.LoginViewModelFactory;
-import com.example.avaliacao2.databinding.ActivityLoginBinding;
 
 public class LoginActivity extends AppCompatActivity {
 
